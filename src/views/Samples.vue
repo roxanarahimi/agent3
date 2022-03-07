@@ -33,22 +33,7 @@
           </a>
         </div>
         <div class="col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href="https://office.webagent.ir" target="_blank" class="card">
-            <img
-              class="card-img-top d-none d-md-block"
-              src="images/shop.jpg"
-              alt="طراحی سایت"
-            />
-            <div class="card-body d-flex d-md-block">
-              <img class="d-md-none" src="images/shop.jpg" alt="طراحی سایت" />
-              <h5 class="card-title ms-auto me-3 text-center my-md-2">
-                فروشگاه 1
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href="https://office.webagent.ir" target="_blank" class="card">
+          <a href="https://company.webagent.ir" target="_blank" class="card">
             <img
               class="card-img-top d-none d-md-block"
               src="images/office.jpg"
@@ -56,6 +41,20 @@
             />
             <div class="card-body d-flex d-md-block">
               <img class="d-md-none" src="images/office.jpg" alt="طراحی سایت" />
+              <h5 class="card-title ms-auto me-3 text-center my-md-2">
+جنرال               </h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xxl-3 mb-3">
+          <a href="https://office.webagent.ir" target="_blank" class="card">
+            <img
+              class="card-img-top d-none d-md-block"
+              src="images/office0.jpg"
+              alt="طراحی سایت"
+            />
+            <div class="card-body d-flex d-md-block">
+              <img class="d-md-none" src="images/office0.jpg" alt="طراحی سایت" />
               <h5 class="card-title ms-auto me-3 text-center my-md-2">
 شرکت               </h5>
             </div>
