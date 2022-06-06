@@ -17,7 +17,7 @@
           </a>
         </div>
         <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://one.webagent.ir" target = "_blank" class = "card">
+          <a href = "https://shop.webagent.ir" target = "_blank" class = "card">
             <img
                     class = "card-img-top d-none d-md-block"
                     src = "images/shop.jpg"
@@ -32,7 +32,7 @@
           </a>
         </div>
         <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://one.webagent.ir/panel/login" target = "_blank" class = "card">
+          <a href = "https://panel.webagent.ir/panel/login" target = "_blank" class = "card">
             <img
                     class = "card-img-top d-none d-md-block"
                     src = "images/shop.panel.jpg"
@@ -74,7 +74,7 @@
             </div>
           </a>
         </div>
-        <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
+        <!-- <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
           <a href = "https://school.webagent.ir" target = "_blank" class = "card">
             <img
                     class = "card-img-top d-none d-md-block"
@@ -87,7 +87,7 @@
                 آموزشگاه </h5>
             </div>
           </a>
-        </div>
+        </div> -->
 
       </div>
     </div>
