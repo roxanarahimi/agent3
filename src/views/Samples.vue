@@ -17,6 +17,21 @@
           </a>
         </div>
         <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
+          <a href = "https://res.webagent.ir" target = "_blank" class = "card">
+            <img
+                    class = "card-img-top d-none d-md-block"
+                    src = "images/delish.jpg"
+                    alt = "طراحی سایت"
+            />
+            <div class = "card-body d-flex d-md-block">
+              <img class = "d-md-none" src = "images/delish.jpg" alt = "طراحی سایت"/>
+              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
+                رستوران
+              </h5>
+            </div>
+          </a>
+        </div>
+        <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
           <a href = "https://shop.webagent.ir" target = "_blank" class = "card">
             <img
                     class = "card-img-top d-none d-md-block"
@@ -42,6 +57,21 @@
               <img class = "d-md-none" src = "images/shop.panel.jpg" alt = "طراحی سایت"/>
               <h5 class = "card-title ms-auto me-3 text-center my-md-2">
                 پنل فروشگاه
+              </h5>
+            </div>
+          </a>
+        </div>
+        <div class = "col-md-4 col-lg-3 col-xxl-3 mb-3">
+          <a href = "https://movies.webagent.ir/" target = "_blank" class = "card">
+            <img
+                    class = "card-img-top d-none d-md-block"
+                    src = "images/movies.jpg"
+                    alt = "طراحی سایت"
+            />
+            <div class = "card-body d-flex d-md-block">
+              <img class = "d-md-none" src = "images/movies.jpg" alt = "طراحی سایت"/>
+              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
+                سایت فیلم
               </h5>
             </div>
           </a>
