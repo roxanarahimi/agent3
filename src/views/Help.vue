@@ -7,7 +7,7 @@
             <div class="image-container mb-4">
               <img
                 class="img-fluid"
-                src="images/details-1.svg"
+                src="/images/details-1.svg"
                 alt="طراحی سایت"
               />
             </div>

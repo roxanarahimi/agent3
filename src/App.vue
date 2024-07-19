@@ -1,14 +1,67 @@
 <template>
   <!-- Navigation -->
-  <nav
-    v-show="$route.name !== 'Page404'"
-    id="navbarExample"
-    class="navbar navbar-expand fixed-top navbar-light"
-    aria-label="Main navigation"
-  >
+  <nav v-if="$route.fullPath.match('/en/*')" v-show="$route.name !== 'Page404'" id="navbarExample" class="navbar navbar-expand fixed-top navbar-light" aria-label="Main navigation">
     <div class="container">
-      <router-link to="/" class="navbar-brand logo-image d-none d-lg-block"
-        >Web Agent<img class="ms-2" src="images/favicon.png" alt="طراحی سایت" /></router-link>
+      <router-link to="/en/" class="navbar-brand logo-image d-none d-lg-block"><img class="me-2" src="/images/favicon.png" alt="web design"/>Web Agent</router-link>
+      <!-- <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+      <!-- <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault"> -->
+      <ul class="navbar-nav navbar-nav-scroll mx-auto me-lg-0 px-0 px-lg-5">
+        <li class="nav-item">
+          <router-link
+              to="/en/"
+              class="nav-link"
+              :class="{ active: $route.fullPath === '/' }"
+              aria-current="page">Home
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link
+              to="/en/about"
+              class="nav-link"
+              :class="{ active: $route.fullPath === '/about' }">About Us
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link
+              to="/en/portfolio"
+              class="nav-link"
+              :class="{ active: $route.fullPath === '/samples' }">Portfolio
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link
+              to="/en/help"
+              class="nav-link"
+              :class="{ active: $route.fullPath === '/help' }">Help
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link
+              to="/en/plans"
+              class="nav-link"
+              :class="{ active: $route.fullPath === '/plans' }">Plans
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link
+              to="/en/contact"
+              class="nav-link"
+              :class="{ active: $route.fullPath === '/contact' }">Contact Us
+          </router-link>
+        </li>
+      </ul>
+      <span class="nav-item d-none d-lg-block py-3">
+        <a class="btn-solid-sm  py-4" href="/">persian</a>
+      </span>
+      <!-- </div> -->
+    </div>
+  </nav>
+
+  <nav v-else v-show="$route.name !== 'Page404'" id="navbarExample1" class="navbar navbar-expand fixed-top navbar-light" aria-label="Main navigation">
+    <div class="container">
+      <router-link to="/" class="navbar-brand logo-image d-none d-lg-block">Web Agent<img class="ms-2" src="/images/favicon.png" alt="طراحی سایت" /></router-link>
       <!-- <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
@@ -75,7 +128,7 @@
                     </li> -->
       </ul>
       <span class="nav-item d-none d-lg-block">
-        <a class="btn-solid-sm py-4" href="https://english.webagent.ir">English</a>
+        <a class="btn-solid-sm py-4" href="/en/">English</a>
       </span>
       <!-- </div> -->
     </div>

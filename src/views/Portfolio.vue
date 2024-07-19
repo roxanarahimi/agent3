@@ -6,7 +6,7 @@
           <a href = "https://mycopa.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/copa.jpg"
+                src=  "/images/copa.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -20,7 +20,7 @@
           <a href = "https://elitefood.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/elite.jpg"
+                src=  "/images/elite.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -34,7 +34,7 @@
           <a href = "https://copacaffe.co.webagent.ir/" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/cc.jpg"
+                src=  "/images/cc.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -48,7 +48,7 @@
           <a href = "https://myshop.webagent.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/myshop.jpg"
+                src=  "/images/myshop.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -62,7 +62,7 @@
           <a href = "https://shop2.webagent.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/shop2.jpg"
+                src=  "/images/shop2.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -76,7 +76,7 @@
           <a href = "https://panel.shop2.webagent.ir/panel/login" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/shop.panel.jpg"
+                src=  "/images/shop.panel.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -90,7 +90,7 @@
           <a href = "https://res.webagent.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/delish.jpg"
+                src=  "/images/delish.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -104,7 +104,7 @@
           <a href = "https://school.webagent.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/ielts.jpg"
+                src=  "/images/ielts.jpg"
                 alt = "طراحی سایت"
             />
             <div class = "card-body ">
@@ -130,7 +130,7 @@
           <a href = "https://old.webagent.ir" target = "_blank" class = "card">
             <img
                 class = "card-img-top"
-                src = "images/old.jpg"
+                src=  "/images/old.jpg"
                 alt = "طراحی سایت"/>
             <div class = "card-body">
               <h5 class = "card-title ms-auto me-3 text-center my-md-2">
@@ -143,7 +143,7 @@
           <a href = "https://shop.webagent.ir" target = "_blank" class = "card">
             <img
                     class = "card-img-top"
-                    src = "images/shop.jpg"
+                    src=  "/images/shop.jpg"
                     alt = "طراحی سایت"
             />
             <div class = "card-body ">
