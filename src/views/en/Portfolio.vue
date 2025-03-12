@@ -140,20 +140,20 @@
             </div>
           </a>
         </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://shop.webagent.ir" target = "_blank" class = "card">
-            <img
-                    class = "card-img-top"
-                    src = "/images/shop.jpg"
-                    alt = "web design"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                Shop
-              </h5>
-            </div>
-          </a>
-        </div>
+<!--        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">-->
+<!--          <a href = "https://shop.webagent.ir" target = "_blank" class = "card">-->
+<!--            <img-->
+<!--                    class = "card-img-top"-->
+<!--                    src = "/images/shop.jpg"-->
+<!--                    alt = "web design"-->
+<!--            />-->
+<!--            <div class = "card-body ">-->
+<!--              <h5 class = "card-title ms-auto me-3 text-center my-md-2">-->
+<!--                Shop-->
+<!--              </h5>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </div>-->
       </div>
     </div>
   </div>
