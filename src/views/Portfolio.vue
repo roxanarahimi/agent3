@@ -2,157 +2,14 @@
   <div>
     <div class = "container">
       <div class = "cards-1 row justify-content-start">
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://mycopa.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/copa.jpg"
-                alt = "طراحی سایت"
-            />
+        <div v-for="item in portfolio" class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
+          <a  :href = "item.link" target = "_blank" class = "card">
+            <img class = "card-img-top" :src=  "item.image" alt = "طراحی سایت"/>
             <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                کوپا
-              </h5>
+              <h5 class = "card-title ms-auto me-3 text-center my-md-2">{{ item.title_fa }}</h5>
             </div>
           </a>
         </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://elitefood.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/elite.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                نودالیت
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://copacaffe.co.webagent.ir/" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/cc.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                کوپاکافه
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://myshop.webagent.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/myshop.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                بیوتی لند
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://shop2.webagent.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/shop2.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                فروشگاه
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://panel.shop2.webagent.ir/panel/login" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/shop.panel.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                پنل فروشگاه
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://res.webagent.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/delish.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                رستوران
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://school.webagent.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/ielts.jpg"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                آموزشگاه </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://highjob.webagent.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src = "/images/highjob.png"
-                alt = "طراحی سایت"
-            />
-            <div class = "card-body ">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                کار یابی </h5>
-            </div>
-          </a>
-        </div>
-        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
-          <a href = "https://old.webagent.ir" target = "_blank" class = "card">
-            <img
-                class = "card-img-top"
-                src=  "/images/old.jpg"
-                alt = "طراحی سایت"/>
-            <div class = "card-body">
-              <h5 class = "card-title ms-auto me-3 text-center my-md-2">
-                web agent
-              </h5>
-            </div>
-          </a>
-        </div>
-<!--        <div class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">-->
-<!--          <a href = "https://shop.webagent.ir" target = "_blank" class = "card">-->
-<!--            <img-->
-<!--                    class = "card-img-top"-->
-<!--                    src=  "/images/shop.jpg"-->
-<!--                    alt = "طراحی سایت"-->
-<!--            />-->
-<!--            <div class = "card-body ">-->
-<!--              <h5 class = "card-title ms-auto me-3 text-center my-md-2">-->
-<!--                فروشگاه-->
-<!--              </h5>-->
-<!--            </div>-->
-<!--          </a>-->
-<!--        </div>-->
       </div>
     </div>
   </div>
@@ -160,7 +17,30 @@
 
 <script>
     export default {
+      name: "Portfolio",
+      setup() {
 
+        const portfolio = [
+          {title_fa: 'توت سوییت',title_en:'Toute Sweet', image:'/images/toutesweet.jpg',link:'https://toute.webagent.ir/'},
+          {title_fa: 'گردونه شانس',title_en:'Chance Wheel', image:'/images/wheel.jpg',link:'https://landing.elitefood.ir/'},
+          // {title_fa: '',title_en:'', image:'',link:''},
+          // {title_fa: '',title_en:'', image:'',link:''},
+
+          {title_fa: 'کوپا',title_en:'Copa', image:'/images/copa.jpg',link:'https://mycopa.ir'},
+          {title_fa: 'نودالیت',title_en:'Noodelite', image:'/images/elite.jpg',link:'https://elitefood.ir'},
+          {title_fa: 'کوپاکافه',title_en:'CopaCafe', image:'/images/cc.jpg',link:'https://copacaffe.co.webagent.ir/'},
+          {title_fa: 'بیوتی لند',title_en:'Beauty Land', image:'/images/myshop.jpg',link:'https://myshop.webagent.ir'},
+          {title_fa: 'فروشگاه',title_en:'Shop', image:'/images/shop2.jpg',link:'https://shop2.webagent.ir'},
+          {title_fa: 'پنل فروشگاه',title_en:'Shop Panel', image:'/images/shop.panel.jpg',link:'https://panel.shop2.webagent.ir/panel/login'},
+          // {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
+          {title_fa: 'آموزشگاه',title_en:'School', image:'/images/ielts.jpg',link:'https://school.webagent.ir'},
+          {title_fa: 'کار یابی ',title_en:'Job Search', image:'/images/highjob.jpg',link:'https://highjob.webagent.ir'},
+          // {title_fa: 'Web Agent',title_en:'Web Agent', image:'/images/old.jpg',link:'https://old.webagent.ir"'},
+        ];
+        return {
+          portfolio
+        };
+      }
     };
 </script>
 
