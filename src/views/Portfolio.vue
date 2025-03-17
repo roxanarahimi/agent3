@@ -16,27 +16,13 @@
 </template>
 
 <script>
+import App from '../App.vue';
     export default {
       name: "Portfolio",
+      components:{ App,},
       setup() {
 
-        const portfolio = [
-          {title_fa: 'توت سوییت',title_en:'Toute Sweet', image:'/images/toutesweet.jpg',link:'https://toute.webagent.ir/'},
-          {title_fa: 'گردونه شانس',title_en:'Chance Wheel', image:'/images/wheel.jpg',link:'https://landing.elitefood.ir/'},
-          // {title_fa: '',title_en:'', image:'',link:''},
-          // {title_fa: '',title_en:'', image:'',link:''},
-
-          {title_fa: 'کوپا',title_en:'Copa', image:'/images/copa.jpg',link:'https://mycopa.ir'},
-          {title_fa: 'نودالیت',title_en:'Noodelite', image:'/images/elite.jpg',link:'https://elitefood.ir'},
-          {title_fa: 'کوپاکافه',title_en:'CopaCafe', image:'/images/cc.jpg',link:'https://copacaffe.co.webagent.ir/'},
-          {title_fa: 'بیوتی لند',title_en:'Beauty Land', image:'/images/myshop.jpg',link:'https://myshop.webagent.ir'},
-          {title_fa: 'فروشگاه',title_en:'Shop', image:'/images/shop2.jpg',link:'https://shop2.webagent.ir'},
-          {title_fa: 'پنل فروشگاه',title_en:'Shop Panel', image:'/images/shop.panel.jpg',link:'https://panel.shop2.webagent.ir/panel/login'},
-          // {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
-          {title_fa: 'آموزشگاه',title_en:'School', image:'/images/ielts.jpg',link:'https://school.webagent.ir'},
-          {title_fa: 'کار یابی ',title_en:'Job Search', image:'/images/highjob.jpg',link:'https://highjob.webagent.ir'},
-          // {title_fa: 'Web Agent',title_en:'Web Agent', image:'/images/old.jpg',link:'https://old.webagent.ir"'},
-        ];
+        const portfolio = App.setup().portfolio;
         return {
           portfolio
         };
@@ -51,22 +37,17 @@
   }
 
   .cards-1 .card {
-    border-radius: 10px !important;
-  }
-
-  .card-img-top {
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 10px !important;
+    border-radius: 11px !important;
   }
 
   .card-body img {
     border-radius: 10px !important;
-    height: 80px;
+    height: 35px;
   }
 
   @media (max-width: 768px) {
     .card-title {
-      line-height: 80px;
+      line-height: 35px;
       margin-bottom: 0 !important;
     }
   }
