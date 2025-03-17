@@ -1,8 +1,11 @@
 .DS_Store
 node_modules
 #/dist
-public/images/sample frame.psd
-public/images/sample frame2.psd
+/public/images/sample_frame.psd
+/public/images/sample_frame2.psd
+dist/images/sample_frame.psd
+dist/images/sample_frame2.psd
+
 
 
 # local env files
