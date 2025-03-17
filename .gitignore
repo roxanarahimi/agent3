@@ -7,7 +7,6 @@ dist/images/sample_frame.psd
 dist/images/sample_frame2.psd
 
 
-
 # local env files
 .env.local
 .env.*.local
