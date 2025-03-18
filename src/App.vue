@@ -83,7 +83,7 @@ export default {
         image: '/images/shop.panel.jpg',
         link: 'https://panel.shop2.webagent.ir/panel/login'
       },
-      // {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
+      {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
       {title_fa: 'آموزشگاه', title_en: 'School', image: '/images/ielts.jpg', link: 'https://school.webagent.ir'},
       {
         title_fa: 'کار یابی ',
