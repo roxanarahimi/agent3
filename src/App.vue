@@ -61,7 +61,7 @@ export default {
         title_fa: 'توت سوییت',
         title_en: 'Toute Sweet',
         image: '/images/toutesweet.jpg',
-        link: 'https://toute.webagent.ir/'
+        link: 'https://toute-sweet.org/'
       },
       {
         title_fa: 'گردونه شانس',
