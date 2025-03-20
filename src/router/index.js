@@ -31,37 +31,6 @@ const routes = [
     name: 'Portfolio',
     component: () => import(/* webpackChunkName: "portfolio" */ '../views/Portfolio')
   },
-  // *********************** English **************************
-  {
-    path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home')
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About')
-  },
-  {
-    path: '/help',
-    name: 'Help',
-    component: () => import(/* webpackChunkName: "help" */ '../views/Help')
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact')
-  },
-  {
-    path: '/plans',
-    name: 'Plans',
-    component: () => import(/* webpackChunkName: "plans" */ '../views/Plans')
-  },
-  {
-    path: '/portfolio',
-    name: 'Portfolio',
-    component: () => import(/* webpackChunkName: "portfolio" */ '../views/Portfolio')
-  },
     // ************************************** English ******************************************
   {
     path: '/en/',

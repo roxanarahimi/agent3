@@ -1,36 +1,5 @@
 <template>
-  <nav v-show="$route.name !== 'Page404'" id="navbarExample1" class="navbar navbar-expand fixed-top navbar-light" aria-label="Main navigation">
-    <div class="container px-0" :class="{'flex-row-reverse': $route.fullPath.match('/en/*')}">
-      <a :href="$route.fullPath.match('/en/*')?'/en/':'/'" class="navbar-brand logo-image d-none d-lg-block">
-        Web Agent
-        <img class="" src="/images/favicon.png" alt="طراحی سایت"/>
-      </a>
-      <ul class="navbar-nav navbar-nav-scroll mx-auto px-0 px-lg-5" :class="{ 'me-lg-0 flex-row-reverse': $route.fullPath.match('/en/*'),'ms-lg-0': !$route.fullPath.match('/en/*') }">
-        <li  class="nav-item d-lg-none">
-          <a :href="$route.fullPath.match('/en/*')?'/en/':'/'" class="nav-link" :title="$route.fullPath.match('/en/*')?'Home':'خانه'" aria-current="page">
-            <img class="" src="/images/favicon.png" width="22px" alt="طراحی سایت"/>
-          </a>
-        </li>
-        <li v-for="(item, index) in menu" :key="index" class="nav-item" :class="{'d-none d-lg-block':index === 0}">
-          <a :href="$route.fullPath.match('/en/*')?'/en'+item.link:item.link"
-                       class="nav-link" :class="{ 'active': ($route.fullPath === item.link)||($route.fullPath === '/en'+item.link) }"
-                       aria-current="page">{{ $route.fullPath.match('/en/*') ? item.title_en : item.title }}
-          </a>
-        </li>
-
-        <li class="nav-item d-lg-none pt-2">
-          <a v-if="$route.fullPath.match('/en/*')" class="nav-item b-solid" href="/">Fa</a>
-          <a v-else href="/en/" class="nav-item b-solid">En</a>
-        </li>
-      </ul>
-
-      <span class="nav-item d-none d-lg-block">
-        <a  v-if="$route.fullPath.match('/en/*')" class="btn-solid-sm py-4" href="/">Persian</a>
-        <a  v-else class="btn-solid-sm  py-4" href="/en/">English</a>
-      </span>
-    </div>
-  </nav>
-
+  <the-nav-bar :lng="$route.name.endsWith('En')?'en':'fa'" />
   <main>
     <div class="px-1 px-md-5 mx-1">
       <router-view v-slot="{ Component }">
@@ -44,60 +13,33 @@
 <script>
 import {useRoute} from "vue-router/dist/vue-router";
 import {onMounted, ref} from "vue";
+import TheNavBar from "./components/TheNavBar";
 
 export default {
+  components:{TheNavBar},
   setup() {
+    const lang = ref('fa');
     const route = useRoute();
-    const menu = [
-      {title: 'خانه', title_en: 'Home', link: '/'},
-      {title: 'درباره ما', title_en: 'About Us', link: '/about'},
-      {title: 'نمونه کار', title_en: 'Portfolio', link: '/portfolio'},
-      {title: 'راهنما', title_en: 'Help', link: '/help'},
-      {title: 'پلن ها', title_en: 'Plans', link: '/plans'},
-      {title: 'تماس با ما', title_en: 'Contact Us', link: '/contact'},
-    ];
     const portfolio = [
-      {
-        title_fa: 'توت سوییت',
-        title_en: 'Toute Sweet',
-        image: '/images/toutesweet.jpg',
-        link: 'https://toute-sweet.org/'
-      },
-      {
-        title_fa: 'گردونه شانس',
-        title_en: 'Chance Wheel',
-        image: '/images/wheel.jpg',
-        link: 'https://landing.elitefood.ir/'
-      },
-      // {title_fa: '',title_en:'', image:'',link:''},
-      // {title_fa: '',title_en:'', image:'',link:''},
-
+      {title_fa: 'توت سوییت', title_en: 'Toute Sweet', image: '/images/toutesweet.jpg', link: 'https://toute-sweet.org/'},
+      {title_fa: 'گردونه شانس', title_en: 'Chance Wheel', image: '/images/wheel.jpg', link: 'https://landing.elitefood.ir/'},
       {title_fa: 'کوپا', title_en: 'Copa', image: '/images/copa.jpg', link: 'https://mycopa.ir'},
       {title_fa: 'نودالیت', title_en: 'Noodelite', image: '/images/elite.jpg', link: 'https://elitefood.ir'},
       {title_fa: 'کوپاکافه', title_en: 'CopaCafe', image: '/images/cc.jpg', link: 'https://copacaffe.co.webagent.ir/'},
       {title_fa: 'بیوتی لند', title_en: 'Beauty Land', image: '/images/myshop.jpg', link: 'https://myshop.webagent.ir'},
       {title_fa: 'فروشگاه', title_en: 'Shop', image: '/images/shop2.jpg', link: 'https://shop2.webagent.ir'},
-      {
-        title_fa: 'پنل فروشگاه',
-        title_en: 'Shop Panel',
-        image: '/images/shop.panel.jpg',
-        link: 'https://panel.shop2.webagent.ir/panel/login'
-      },
+      {title_fa: 'پنل فروشگاه', title_en: 'Shop Panel', image: '/images/shop.panel.jpg', link: 'https://panel.shop2.webagent.ir/panel/login'},
       {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
       {title_fa: 'آموزشگاه', title_en: 'School', image: '/images/ielts.jpg', link: 'https://school.webagent.ir'},
-      {
-        title_fa: 'کار یابی ',
-        title_en: 'Job Search',
-        image: '/images/highjob.jpg',
-        link: 'https://highjob.webagent.ir'
-      },
+      {title_fa: 'کار یابی ', title_en: 'Job Search', image: '/images/highjob.jpg', link: 'https://highjob.webagent.ir'},
       // {title_fa: 'Web Agent',title_en:'Web Agent', image:'/images/old.jpg',link:'https://old.webagent.ir"'},
     ];
     return {
-      menu, portfolio
+      route, portfolio,lang
     };
   },
-//   mounted() {
+
+  //   mounted() {
 //     let isMobile = false; // is molbile/tablet
 //     (function (a) {
 //       (function (a) {

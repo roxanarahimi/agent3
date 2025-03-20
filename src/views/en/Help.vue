@@ -72,7 +72,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name:'HelpEn'
+};
 </script>
 
 <style>
