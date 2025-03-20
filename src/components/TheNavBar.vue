@@ -19,8 +19,8 @@
         </li>
 
         <li class="nav-item d-lg-none pt-2">
-          <router-link v-if="lang=='en'" class="nav-item b-solid" to="/" >Fa</router-link>
-          <router-link v-else to="/en/" class="nav-item b-solid">En</router-link>
+          <router-link v-if="lang=='en'" class="nav-item b-solid" to="/" @click="setLang('fa')">Fa</router-link>
+          <router-link v-else to="/en/" class="nav-item b-solid" @click="setLang('en')">En</router-link>
         </li>
       </ul>
 
@@ -41,9 +41,9 @@ export default {
   name: "TheNavBar",
   props:['lng'],
   setup(props){
-    const lang = ref(props.lng);
     const route = useRoute();
-    const prefix = lang == 'en'? '/en':'';
+    const lang = ref(props.lng);
+    const prefix = ref(lang.value == 'en'? '/en':'');
     const menu = [
       {title: 'خانه', title_en: 'Home', link: '/'},
       {title: 'درباره ما', title_en: 'About Us', link: '/about'},
@@ -54,6 +54,7 @@ export default {
     ];
     const setLang = (language)=>{
       lang.value = language;
+      prefix.value = lang.value == 'en'? '/en':'';
     }
     return {
       menu, route,prefix,lang, setLang
