@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class = "container">
-      <div class = "cards-1 row justify-content-end">
+      <div class = "cards-1 row justify-content-end" dir="ltr">
         <div v-for="item in portfolio" class = "col-6 col-md-4 col-lg-3 col-xxl-3 mb-3">
           <a  :href = "item.link" target = "_blank" class = "card">
             <img class = "card-img-top" :src=  "item.image" alt = "طراحی سایت"/>
