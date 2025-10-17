@@ -22,7 +22,7 @@ export default {
     const route = useRoute();
     const portfolio = [
       {title_fa: 'کوپابی', title_en: 'CopaBee', image: '/images/bee.jpg', link: 'https://asallaziz.com/'},
-      {title_fa: 'توت سوییت', title_en: 'Toute Sweet', image: '/images/toutesweet.jpg', link: 'https://toute-sweet.org/'},
+      {title_fa: 'توت سوییت', title_en: 'Toute Sweet', image: '/images/toutesweet.jpg', link: 'https://toute-sweet.ir/'},
       {title_fa: 'گردونه شانس', title_en: 'Chance Wheel', image: '/images/wheel.jpg', link: 'https://landing.elitefood.ir/'},
       {title_fa: 'کوپا', title_en: 'Copa', image: '/images/copa.jpg', link: 'https://mycopa.ir'},
       {title_fa: 'نودالیت', title_en: 'Noodelite', image: '/images/elite.jpg', link: 'https://elitefood.ir'},
@@ -33,7 +33,6 @@ export default {
       {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
       {title_fa: 'آموزشگاه', title_en: 'School', image: '/images/ielts.jpg', link: 'https://school.webagent.ir'},
       {title_fa: 'کار یابی ', title_en: 'Job Search', image: '/images/highjob.jpg', link: 'https://highjob.webagent.ir'},
-      // {title_fa: 'Web Agent',title_en:'Web Agent', image:'/images/old.jpg',link:'https://old.webagent.ir"'},
     ];
     return {
       route, portfolio,lang
