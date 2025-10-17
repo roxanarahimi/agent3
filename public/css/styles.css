@@ -1,39 +1,4 @@
-/* Description: Master CSS file */
 
-/*****************************************
-Table Of Contents:
-- General Styles
-- Navigation
-- Header
-- Services
-- Details 1
-- Details Modal
-- Details 2
-- Projects
-- Testimonials
-- Pricing
-- Invitation
-- Contact
-- Footer
-- Copyright
-- Back To Top Button
-- Extra Pages
-- Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-- Backgrounds - light gray #f9f9f9
-- Buttons - red #ff5574
-- Buttons - blue #6168ff
-- Headings text - black #222222
-- Body text - dark gray #5e6576
-******************************************/
-
-
-/**************************/
-/*     General Styles     */
-/**************************/
 body,
 html {
     width: 100%;
@@ -102,9 +67,9 @@ body, p {
     font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
-* :not(.fa, .far, .fab, .fas), .image-container {
+* , .image-container {
     /* text-align: right; */
-    font-family: 'IranSans' !important;
+    font-family: 'IranSans';
     /* font-family: 'Vazir'; */
 }
 
