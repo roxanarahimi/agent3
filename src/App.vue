@@ -27,7 +27,7 @@ export default {
       {title_fa: 'کوپا', title_en: 'Copa', image: '/images/copa.jpg', link: 'https://mycopa.ir'},
       {title_fa: 'نودالیت', title_en: 'Noodelite', image: '/images/elite.jpg', link: 'https://elitefood.ir'},
       {title_fa: 'کوپاکافه', title_en: 'CopaCafe', image: '/images/cc.jpg', link: 'https://copacaffe.co.webagent.ir/'},
-      {title_fa: 'بیوتی لند', title_en: 'Beauty Land', image: '/images/myshop.jpg', link: 'https://myshop.webagent.ir'},
+      {title_fa: 'فروشگاه rx', title_en: 'RX Shop', image: '/images/myshop.jpg', link: 'https://rxshop.ir'},
       {title_fa: 'فروشگاه', title_en: 'Shop', image: '/images/shop2.jpg', link: 'https://shop2.webagent.ir'},
       {title_fa: 'پنل فروشگاه', title_en: 'Shop Panel', image: '/images/shop.panel.jpg', link: 'https://panel.shop2.webagent.ir/panel/login'},
       {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
