@@ -22,13 +22,13 @@ export default {
     const route = useRoute();
     const portfolio = [
       {title_fa: 'نظرسنجی نودالیت', title_en: 'Noodelite Poll', image: '/images/poll.png', link: 'https://poll.amadehlaziz.com/'},
+      {title_fa: 'فروشگاه rx', title_en: 'RX Shop', image: '/images/myshop.jpg', link: 'https://rxshop.ir'},
       {title_fa: 'توت سوییت', title_en: 'Toute Sweet', image: '/images/toutesweet.jpg', link: 'https://toute-sweet.ir/'},
       {title_fa: 'کوپابی', title_en: 'CopaBee', image: '/images/bee.jpg', link: 'https://asallaziz.com/'},
       {title_fa: 'گردونه شانس', title_en: 'Chance Wheel', image: '/images/wheel.jpg', link: 'https://landing.elitefood.ir/'},
       {title_fa: 'کوپا', title_en: 'Copa', image: '/images/copa.jpg', link: 'https://mycopa.ir'},
       {title_fa: 'نودالیت', title_en: 'Noodelite', image: '/images/elite.jpg', link: 'https://elitefood.ir'},
       {title_fa: 'کوپاکافه', title_en: 'CopaCafe', image: '/images/cc.jpg', link: 'https://copacaffe.co.webagent.ir/'},
-      {title_fa: 'فروشگاه rx', title_en: 'RX Shop', image: '/images/myshop.jpg', link: 'https://rxshop.ir'},
       {title_fa: 'فروشگاه', title_en: 'Shop', image: '/images/shop2.jpg', link: 'https://shop2.webagent.ir'},
       {title_fa: 'پنل فروشگاه', title_en: 'Shop Panel', image: '/images/shop.panel.jpg', link: 'https://panel.shop2.webagent.ir/panel/login'},
       {title_fa: 'رستوران',title_en:'Restaurant', image:'/images/delish.jpg',link:'https://res.webagent.ir'},
